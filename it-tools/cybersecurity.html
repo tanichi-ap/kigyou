@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-N6PZWZZH');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サイバーセキュリティの基礎｜中小企業を守るセキュリティ対策完全ガイド - 起業準備ガイド</title>
+    <meta name="description" content="中小企業・個人事業主が知っておくべきサイバーセキュリティの基礎知識を解説。ウイルス対策、パスワード管理、データバックアップ、フィッシング詐欺対策など実践的なセキュリティ対策方法を詳しく紹介します。">
+    <meta name="keywords" content="サイバーセキュリティ,情報セキュリティ,ウイルス対策,パスワード管理,データバックアップ,フィッシング詐欺,ランサムウェア,セキュリティ対策">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N6PZWZZH"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="../index.html">起業準備ガイド</a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">ホーム</a></li>
+                    <li><a href="../basics/what-is-entrepreneurship.html">基礎知識</a></li>
+                    <li><a href="../business-ideas/ideation.html">ビジネスアイデア</a></li>
+                    <li><a href="../startup-types/sole-proprietorship.html">起業形態</a></li>
+                    <li><a href="../establishment/overview.html">設立手続き</a></li>
+                    <li><a href="../financing/funding-estimation.html">資金調達</a></li>
+                    <li><a href="../licensing/licensing-required-businesses.html">許認可・法務</a></li>
+                    <li><a href="../accounting/taxation-differences.html">税務・会計</a></li>
+                    <li><a href="../office-setup/location-selection.html">オフィス・設備</a></li>
+                    <li><a href="pc-setup.html" class="active">IT・ツール</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">ホーム</a> > <a href="pc-setup.html">IT・ツール活用</a> > サイバーセキュリティの基礎
+            </div>
+
+            <article class="content">
+                <h1>サイバーセキュリティの基礎</h1>
+                <p class="lead">中小企業・個人事業主が知っておくべきサイバーセキュリティの基礎知識を解説します。ウイルス対策、パスワード管理、データバックアップ、フィッシング詐欺対策など、事業を守るための実践的なセキュリティ対策方法を詳しく紹介します。</p>
+
+                <h2>サイバーセキュリティの重要性</h2>
+                
+                <h3>中小企業が狙われる理由</h3>
+                <div class="why-targeted">
+                    <ul>
+                        <li><strong>防御の薄さ：</strong>大企業に比べてセキュリティ対策が不十分</li>
+                        <li><strong>意識の低さ：</strong>「うちは狙われない」という思い込み</li>
+                        <li><strong>専門知識不足：</strong>IT専門スタッフの不在</li>
+                        <li><strong>予算制約：</strong>セキュリティ投資の優先度が低い</li>
+                        <li><strong>大企業への踏み台：</strong>取引先への攻撃の足がかり</li>
+                        <li><strong>個人情報の宝庫：</strong>顧客情報の価値</li>
+                    </ul>
+                </div>
+
+                <h3>サイバー攻撃による被害</h3>
+                <div class="cyber-damage">
+                    <h4>直接的被害</h4>
+                    <ul>
+                        <li><strong>データ損失：</strong>顧客情報、業務データの消失</li>
+                        <li><strong>システム停止：</strong>業務停止による売上損失</li>
+                        <li><strong>復旧費用：</strong>システム修復・データ復旧</li>
+                        <li><strong>身代金要求：</strong>ランサムウェアによる金銭被害</li>
+                    </ul>
+
+                    <h4>間接的被害</h4>
+                    <ul>
+                        <li><strong>信用失墜：</strong>顧客・取引先からの信頼喪失</li>
+                        <li><strong>法的責任：</strong>個人情報漏えいによる損害賠償</li>
+                        <li><strong>競争力低下：</strong>機密情報の流出</li>
+                        <li><strong>事業継続困難：</strong>経営存続への影響</li>
+                    </ul>
+                </div>
+
+                <h2>主要なサイバー脅威</h2>
+                
+                <h3>マルウェア（悪意のあるソフトウェア）</h3>
+                
+                <h4>ウイルス</h4>
+                <div class="threat-details">
+                    <h5>特徴</h5>
+                    <ul>
+                        <li><strong>自己複製：</strong>他のファイルに感染して拡散</li>
+                        <li><strong>破壊活動：</strong>ファイルの破損・削除</li>
+                        <li><strong>感染経路：</strong>メール添付、USBメモリ、Webサイト</li>
+                    </ul>
+
+                    <h5>対策</h5>
+                    <ul>
+                        <li>アンチウイルスソフトの導入・更新</li>
+                        <li>OSやソフトウェアの定期更新</li>
+                        <li>怪しいファイルの実行禁止</li>
+                        <li>定期的なシステムスキャン</li>
+                    </ul>
+                </div>
+
+                <h4>ランサムウェア</h4>
+                <div class="threat-details">
+                    <h5>特徴</h5>
+                    <ul>
+                        <li><strong>暗号化：</strong>ファイルを暗号化してアクセス不能に</li>
+                        <li><strong>身代金要求：</strong>解除のための金銭要求</li>
+                        <li><strong>時間制限：</strong>期限内に支払わないとデータ削除</li>
+                    </ul>
+
+                    <h5>予防策</h5>
+                    <ul>
+                        <li>定期的なバックアップ（オフライン保存）</li>
+                        <li>最新のセキュリティパッチ適用</li>
+                        <li>メール添付ファイルの慎重な取り扱い</li>
+                        <li>権限の最小化原則</li>
+                    </ul>
+                </div>
+
+                <h3>フィッシング詐欺</h3>
+                <div class="phishing-details">
+                    <h4>手口の種類</h4>
+                    <table>
+                        <tr>
+                            <th>種類</th>
+                            <th>手法</th>
+                            <th>目的</th>
+                        </tr>
+                        <tr>
+                            <td>メール型</td>
+                            <td>偽の銀行・ECサイトからのメール</td>
+                            <td>ID・パスワード窃取</td>
+                        </tr>
+                        <tr>
+                            <td>Webサイト型</td>
+                            <td>正規サイトを模倣した偽サイト</td>
+                            <td>ログイン情報・個人情報窃取</td>
+                        </tr>
+                        <tr>
+                            <td>SMS型</td>
+                            <td>宅配業者等を装ったSMS</td>
+                            <td>アプリインストール・情報窃取</td>
+                        </tr>
+                        <tr>
+                            <td>電話型</td>
+                            <td>サポートセンター等を装った電話</td>
+                            <td>遠隔操作・金銭詐取</td>
+                        </tr>
+                    </table>
+
+                    <h4>見分け方</h4>
+                    <ul>
+                        <li><strong>送信者確認：</strong>メールアドレス・ドメインの検証</li>
+                        <li><strong>URL確認：</strong>リンク先のドメイン確認</li>
+                        <li><strong>緊急性の演出：</strong>「すぐに対応を」等の文言に注意</li>
+                        <li><strong>個人情報要求：</strong>パスワード等の入力要求に注意</li>
+                        <li><strong>日本語の不自然さ：</strong>翻訳ソフト特有の表現</li>
+                    </ul>
+                </div>
+
+                <h2>基本的なセキュリティ対策</h2>
+                
+                <h3>パスワード管理</h3>
+                
+                <h4>強固なパスワードの作成</h4>
+                <div class="password-security">
+                    <h5>パスワードの要件</h5>
+                    <ul>
+                        <li><strong>長さ：</strong>12文字以上（推奨16文字以上）</li>
+                        <li><strong>複雑性：</strong>大文字・小文字・数字・記号の組み合わせ</li>
+                        <li><strong>予測困難：</strong>辞書にある単語や個人情報を避ける</li>
+                        <li><strong>一意性：</strong>サービスごとに異なるパスワード</li>
+                    </ul>
+
+                    <h5>パスワード作成例</h5>
+                    <table>
+                        <tr>
+                            <th>悪い例</th>
+                            <th>理由</th>
+                            <th>良い例</th>
+                        </tr>
+                        <tr>
+                            <td>password123</td>
+                            <td>単純・よく使われる</td>
+                            <td>Tr0ub4dor&3!</td>
+                        </tr>
+                        <tr>
+                            <td>yamada1980</td>
+                            <td>個人情報</td>
+                            <td>M1k3$L0v3sCh0c0l4t3</td>
+                        </tr>
+                        <tr>
+                            <td>123456</td>
+                            <td>数字のみ・単純</td>
+                            <td>C0ff3e&Cr34m#2024</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <h4>二要素認証（2FA）</h4>
+                <div class="two-factor-auth">
+                    <h5>認証方式</h5>
+                    <ul>
+                        <li><strong>SMS認証：</strong>携帯電話への確認コード送信</li>
+                        <li><strong>アプリ認証：</strong>Google Authenticator等の専用アプリ</li>
+                        <li><strong>メール認証：</strong>メールアドレスへの確認コード</li>
+                        <li><strong>ハードウェアキー：</strong>物理的なセキュリティキー</li>
+                    </ul>
+
+                    <h5>設定推奨サービス</h5>
+                    <ul>
+                        <li>銀行・金融機関のオンラインサービス</li>
+                        <li>メール・クラウドストレージ</li>
+                        <li>SNS・コミュニケーションツール</li>
+                        <li>業務システム・CRM</li>
+                    </ul>
+                </div>
+
+                <h3>ソフトウェア更新管理</h3>
+                
+                <h4>定期更新の重要性</h4>
+                <div class="software-updates">
+                    <h5>更新対象</h5>
+                    <ul>
+                        <li><strong>OS：</strong>Windows、macOS、Linux</li>
+                        <li><strong>ブラウザ：</strong>Chrome、Firefox、Safari、Edge</li>
+                        <li><strong>セキュリティソフト：</strong>ウイルス定義・エンジン</li>
+                        <li><strong>業務ソフト：</strong>Office、Adobe製品等</li>
+                        <li><strong>プラグイン：</strong>Java、Flash、PDF閲覧ソフト</li>
+                    </ul>
+
+                    <h5>自動更新の設定</h5>
+                    <table>
+                        <tr>
+                            <th>OS</th>
+                            <th>設定場所</th>
+                            <th>推奨設定</th>
+                        </tr>
+                        <tr>
+                            <td>Windows</td>
+                            <td>Windows Update</td>
+                            <td>自動インストール</td>
+                        </tr>
+                        <tr>
+                            <td>macOS</td>
+                            <td>システム環境設定 > ソフトウェア・アップデート</td>
+                            <td>自動的にアップデートを確認</td>
+                        </tr>
+                        <tr>
+                            <td>Chrome</td>
+                            <td>設定 > 詳細設定 > リセットとクリーンアップ</td>
+                            <td>自動更新有効</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <h2>ネットワークセキュリティ</h2>
+                
+                <h3>Wi-Fiセキュリティ</h3>
+                
+                <h4>オフィスWi-Fiの設定</h4>
+                <div class="wifi-security">
+                    <h5>暗号化設定</h5>
+                    <ul>
+                        <li><strong>WPA3：</strong>最新・最強の暗号化（推奨）</li>
+                        <li><strong>WPA2：</strong>広く対応、最低限の要件</li>
+                        <li><strong>WEP：</strong>古い規格、使用禁止</li>
+                        <li><strong>オープン：</strong>暗号化なし、使用禁止</li>
+                    </ul>
+
+                    <h5>アクセス制御</h5>
+                    <ul>
+                        <li><strong>SSID非表示：</strong>ネットワーク名の隠蔽</li>
+                        <li><strong>MACアドレス制限：</strong>許可デバイスのみ接続</li>
+                        <li><strong>ゲストネットワーク：</strong>来客用の分離ネットワーク</li>
+                        <li><strong>定期パスワード変更：</strong>3-6ヶ月ごとの更新</li>
+                    </ul>
+                </div>
+
+                <h4>公衆Wi-Fi利用時の注意</h4>
+                <div class="public-wifi">
+                    <h5>リスク</h5>
+                    <ul>
+                        <li><strong>盗聴：</strong>通信内容の傍受</li>
+                        <li><strong>偽アクセスポイント：</strong>悪意のあるWi-Fi</li>
+                        <li><strong>中間者攻撃：</strong>通信の改ざん・傍受</li>
+                        <li><strong>マルウェア配布：</strong>悪意のあるファイル配布</li>
+                    </ul>
+
+                    <h5>安全な利用方法</h5>
+                    <ul>
+                        <li>VPN接続の利用</li>
+                        <li>HTTPS通信の確認</li>
+                        <li>重要な業務の回避</li>
+                        <li>自動接続の無効化</li>
+                    </ul>
+                </div>
+
+                <h3>ファイアウォール</h3>
+                
+                <h4>ファイアウォールの種類</h4>
+                <div class="firewall-types">
+                    <h5>ハードウェア型</h5>
+                    <ul>
+                        <li><strong>ルーター内蔵：</strong>基本的な防御機能</li>
+                        <li><strong>専用機器：</strong>高度な防御・管理機能</li>
+                        <li><strong>UTM：</strong>統合脅威管理機能</li>
+                    </ul>
+
+                    <h5>ソフトウェア型</h5>
+                    <ul>
+                        <li><strong>OS標準：</strong>Windows Defender、macOSファイアウォール</li>
+                        <li><strong>セキュリティソフト：</strong>Norton、McAfee等</li>
+                        <li><strong>専用ソフト：</strong>ZoneAlarm、Comodo等</li>
+                    </ul>
+                </div>
+
+                <h2>データ保護・バックアップ</h2>
+                
+                <h3>バックアップ戦略</h3>
+                
+                <h4>3-2-1ルール</h4>
+                <div class="backup-strategy">
+                    <h5>ルールの内容</h5>
+                    <ul>
+                        <li><strong>3つのコピー：</strong>オリジナル + 2つのバックアップ</li>
+                        <li><strong>2つの媒体：</strong>異なる記録媒体に保存</li>
+                        <li><strong>1つはオフサイト：</strong>別の場所に保管</li>
+                    </ul>
+
+                    <h5>具体例</h5>
+                    <ul>
+                        <li><strong>オリジナル：</strong>PC内蔵ハードディスク</li>
+                        <li><strong>バックアップ1：</strong>外付けハードディスク</li>
+                        <li><strong>バックアップ2：</strong>クラウドストレージ</li>
+                    </ul>
+                </div>
+
+                <h4>バックアップツール</h4>
+                <div class="backup-tools">
+                    <table>
+                        <tr>
+                            <th>ツール</th>
+                            <th>種類</th>
+                            <th>特徴</th>
+                            <th>料金</th>
+                        </tr>
+                        <tr>
+                            <td>Windows バックアップ</td>
+                            <td>OS標準</td>
+                            <td>システム全体のバックアップ</td>
+                            <td>無料</td>
+                        </tr>
+                        <tr>
+                            <td>Time Machine</td>
+                            <td>macOS標準</td>
+                            <td>自動増分バックアップ</td>
+                            <td>無料</td>
+                        </tr>
+                        <tr>
+                            <td>Acronis True Image</td>
+                            <td>有料ソフト</td>
+                            <td>高機能・高速バックアップ</td>
+                            <td>年額8,000円程度</td>
+                        </tr>
+                        <tr>
+                            <td>Google Drive</td>
+                            <td>クラウド</td>
+                            <td>ファイル同期・共有</td>
+                            <td>月額250円〜</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <h3>暗号化</h3>
+                
+                <h4>暗号化の対象</h4>
+                <div class="encryption-targets">
+                    <h5>ストレージ暗号化</h5>
+                    <ul>
+                        <li><strong>ハードディスク全体：</strong>BitLocker（Windows）、FileVault（macOS）</li>
+                        <li><strong>外付けデバイス：</strong>USBメモリ、外付けHDD</li>
+                        <li><strong>クラウドストレージ：</strong>アップロード前の暗号化</li>
+                    </ul>
+
+                    <h5>通信暗号化</h5>
+                    <ul>
+                        <li><strong>HTTPS：</strong>Webサイトとの通信</li>
+                        <li><strong>VPN：</strong>リモートアクセス時の通信</li>
+                        <li><strong>メール暗号化：</strong>機密情報を含むメール</li>
+                    </ul>
+                </div>
+
+                <h2>従業員教育・啓発</h2>
+                
+                <h3>セキュリティ教育の内容</h3>
+                
+                <h4>基本的な知識</h4>
+                <div class="security-education">
+                    <h5>必須項目</h5>
+                    <ul>
+                        <li><strong>パスワード管理：</strong>強固なパスワード作成・管理</li>
+                        <li><strong>メールセキュリティ：</strong>怪しいメールの見分け方</li>
+                        <li><strong>Web閲覧：</strong>安全なサイトの確認方法</li>
+                        <li><strong>ソフトウェア更新：</strong>定期更新の重要性</li>
+                        <li><strong>データ取り扱い：</strong>機密情報の適切な管理</li>
+                    </ul>
+
+                    <h5>実践演習</h5>
+                    <ul>
+                        <li>フィッシングメールの判定練習</li>
+                        <li>パスワード作成・管理ツール体験</li>
+                        <li>緊急時対応のシミュレーション</li>
+                        <li>セキュリティソフトの使い方</li>
+                    </ul>
+                </div>
+
+                <h3>セキュリティポリシーの策定</h3>
+                
+                <h4>ポリシーの項目</h4>
+                <div class="security-policy">
+                    <h5>基本方針</h5>
+                    <ul>
+                        <li><strong>目的・適用範囲：</strong>セキュリティの目的と対象</li>
+                        <li><strong>責任体制：</strong>管理者・利用者の役割</li>
+                        <li><strong>遵守事項：</strong>従業員が守るべきルール</li>
+                        <li><strong>違反時の対応：</strong>ルール違反時の処置</li>
+                    </ul>
+
+                    <h5>具体的なルール</h5>
+                    <ul>
+                        <li>業務データの持ち出し禁止</li>
+                        <li>個人デバイスでの業務利用制限</li>
+                        <li>SNSでの業務情報投稿禁止</li>
+                        <li>来客時のPC画面保護</li>
+                        <li>退職時のデータ削除・返却</li>
+                    </ul>
+                </div>
+
+                <h2>緊急時対応（インシデント対応）</h2>
+                
+                <h3>インシデント発生時の初期対応</h3>
+                
+                <h4>対応手順</h4>
+                <div class="incident-response">
+                    <ol>
+                        <li><strong>発見・検知</strong>
+                            <ul>
+                                <li>異常の確認・記録</li>
+                                <li>被害範囲の初期調査</li>
+                                <li>責任者への報告</li>
+                            </ul>
+                        </li>
+                        <li><strong>封じ込め</strong>
+                            <ul>
+                                <li>感染拡大の防止</li>
+                                <li>ネットワーク切断</li>
+                                <li>システム停止</li>
+                            </ul>
+                        </li>
+                        <li><strong>調査・分析</strong>
+                            <ul>
+                                <li>攻撃手法の特定</li>
+                                <li>被害範囲の詳細調査</li>
+                                <li>証拠の保全</li>
+                            </ul>
+                        </li>
+                        <li><strong>復旧・回復</strong>
+                            <ul>
+                                <li>システムの修復</li>
+                                <li>データの復元</li>
+                                <li>正常運用の確認</li>
+                            </ul>
+                        </li>
+                        <li><strong>事後対応</strong>
+                            <ul>
+                                <li>関係者への報告</li>
+                                <li>再発防止策の策定</li>
+                                <li>対応手順の見直し</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
+                <h3>緊急連絡先の整備</h3>
+                <div class="emergency-contacts">
+                    <h4>内部連絡先</h4>
+                    <ul>
+                        <li><strong>セキュリティ管理者：</strong>最高情報責任者（CISO）</li>
+                        <li><strong>IT管理者：</strong>システム管理者</li>
+                        <li><strong>経営陣：</strong>社長・役員</li>
+                        <li><strong>法務・総務：</strong>対外対応責任者</li>
+                    </ul>
+
+                    <h4>外部連絡先</h4>
+                    <ul>
+                        <li><strong>セキュリティベンダー：</strong>利用しているセキュリティサービス</li>
+                        <li><strong>ITサポート業者：</strong>システム保守業者</li>
+                        <li><strong>警察：</strong>サイバー犯罪相談窓口</li>
+                        <li><strong>JPCERT/CC：</strong>コンピュータセキュリティインシデント対応</li>
+                    </ul>
+                </div>
+
+                <h2>コスト効果的なセキュリティ対策</h2>
+                
+                <h3>予算別推奨対策</h3>
+                
+                <h4>低予算（月額1万円未満）</h4>
+                <div class="budget-low">
+                    <ul>
+                        <li>Windows Defender + 定期更新</li>
+                        <li>強固なパスワード + 二要素認証</li>
+                        <li>クラウドバックアップ（Google Drive等）</li>
+                        <li>従業員教育（自社実施）</li>
+                        <li>基本的なファイアウォール設定</li>
+                    </ul>
+                </div>
+
+                <h4>中予算（月額1-5万円）</h4>
+                <div class="budget-medium">
+                    <ul>
+                        <li>ビジネス向けセキュリティソフト</li>
+                        <li>パスワード管理ツール（全社導入）</li>
+                        <li>業務用クラウドストレージ</li>
+                        <li>VPNサービス</li>
+                        <li>定期セキュリティ研修</li>
+                    </ul>
+                </div>
+
+                <h4>高予算（月額5万円以上）</h4>
+                <div class="budget-high">
+                    <ul>
+                        <li>統合セキュリティサービス（UTM等）</li>
+                        <li>セキュリティ監視サービス（SOC）</li>
+                        <li>専門コンサルタントによる診断</li>
+                        <li>高度なバックアップシステム</li>
+                        <li>セキュリティインシデント保険</li>
+                    </ul>
+                </div>
+
+                <h2>業種別セキュリティ対策</h2>
+                
+                <h3>小売業・EC事業</h3>
+                <div class="retail-security">
+                    <h4>特有のリスク</h4>
+                    <ul>
+                        <li>顧客クレジットカード情報</li>
+                        <li>POS端末のセキュリティ</li>
+                        <li>ECサイトへの攻撃</li>
+                        <li>在庫管理システム</li>
+                    </ul>
+
+                    <h4>推奨対策</h4>
+                    <ul>
+                        <li>PCI DSS準拠</li>
+                        <li>SSL証明書の導入</li>
+                        <li>定期的な脆弱性診断</li>
+                        <li>POS端末の定期更新</li>
+                    </ul>
+                </div>
+
+                <h3>医療・介護業</h3>
+                <div class="healthcare-security">
+                    <h4>特有のリスク</h4>
+                    <ul>
+                        <li>患者の個人情報・医療情報</li>
+                        <li>電子カルテシステム</li>
+                        <li>医療機器のIoTセキュリティ</li>
+                        <li>法的規制（個人情報保護法等）</li>
+                    </ul>
+
+                    <h4>推奨対策</h4>
+                    <ul>
+                        <li>医療情報システムの安全管理ガイドライン遵守</li>
+                        <li>アクセス権限の厳格な管理</li>
+                        <li>医療機器のネットワーク分離</li>
+                        <li>定期的な監査・点検</li>
+                    </ul>
+                </div>
+
+                <div class="checklist">
+                    <h3>サイバーセキュリティ対策チェックリスト</h3>
+                    <h4>基本対策</h4>
+                    <ul>
+                        <li>セキュリティソフトの導入・更新</li>
+                        <li>OS・ソフトウェアの定期更新</li>
+                        <li>強固なパスワード・二要素認証の設定</li>
+                        <li>定期的なデータバックアップ</li>
+                        <li>Wi-Fiセキュリティ設定の確認</li>
+                    </ul>
+
+                    <h4>運用管理</h4>
+                    <ul>
+                        <li>従業員向けセキュリティ教育の実施</li>
+                        <li>セキュリティポリシーの策定・周知</li>
+                        <li>緊急時対応手順の整備</li>
+                        <li>定期的なセキュリティ点検</li>
+                        <li>インシデント発生時の連絡体制確立</li>
+                    </ul>
+
+                    <h4>継続改善</h4>
+                    <ul>
+                        <li>最新脅威情報の収集・対応</li>
+                        <li>セキュリティ対策の効果測定</li>
+                        <li>年1回のセキュリティ見直し</li>
+                        <li>専門業者による定期診断検討</li>
+                        <li>業界のセキュリティ基準への準拠</li>
+                    </ul>
+                </div>
+
+                <div class="next-steps">
+                    <h3>関連ページ</h3>
+                    <ul>
+                        <li><a href="online-tools.html">オンラインツール・クラウドサービス活用</a></li>
+                        <li><a href="pc-setup.html">業務用PCと基本ソフトの準備</a></li>
+                        <li><a href="business-email-domain.html">ビジネス用メールアドレス・独自ドメイン取得</a></li>
+                        <li><a href="../licensing/licensing-required-businesses.html">許認可が必要な業種は？</a></li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 起業準備ガイド. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

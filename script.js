@@ -71,37 +71,28 @@ function initHeaderScroll() {
 
 // モバイルメニュー
 function initMobileMenu() {
-    const menuButton = document.createElement('button');
-    menuButton.innerHTML = '☰';
-    menuButton.classList.add('mobile-menu-button');
-    menuButton.style.cssText = `
-        display: none;
-        background: none;
-        border: none;
-        color: white;
-        font-size: 1.5rem;
-        cursor: pointer;
-        @media (max-width: 768px) {
-            display: block;
-        }
-    `;
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
     
-    const nav = document.querySelector('nav');
-    const navLinks = document.querySelector('.nav-links');
-    
-    if (nav && navLinks) {
-        nav.appendChild(menuButton);
+    if (hamburger && navMenu) {
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
         
-        menuButton.addEventListener('click', () => {
-            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        // メニュー項目クリック時にメニューを閉じる
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
         });
         
         // ウィンドウリサイズ時の処理
         window.addEventListener('resize', () => {
             if (window.innerWidth > 768) {
-                navLinks.style.display = 'flex';
-            } else {
-                navLinks.style.display = 'none';
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
             }
         });
     }

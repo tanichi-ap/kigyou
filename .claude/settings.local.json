@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(python:*)",
+      "Bash(rm:*)",
+      "Bash(del fix_links.py)",
+      "Bash(mkdir:*)"
+    ],
+    "deny": []
+  }
+}

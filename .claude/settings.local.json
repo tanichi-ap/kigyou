@@ -5,7 +5,10 @@
       "Bash(python:*)",
       "Bash(rm:*)",
       "Bash(del fix_links.py)",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Bash(node:*)",
+      "Bash(grep:*)",
+      "mcp__ide__getDiagnostics"
     ],
     "deny": []
   }
